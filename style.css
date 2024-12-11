@@ -17,31 +17,14 @@ body {
     min-height: 100vh;
 }
 
-/* Main Container */
-section {
-    background-color: white;
-    padding: 2rem;
-    width: 90%;
-    max-width: 800px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    text-align: center;
-    margin-top: 30px;
-    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Add hover effect */
-}
-
-section:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
-}
-
 /* Header */
 header {
     background-color: #4CAF50;
     color: white;
     padding: 2rem;
     border-radius: 8px;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
+    width: 100%;
     text-align: center;
 }
 
@@ -57,55 +40,47 @@ header p {
     font-size: 1.2rem;
 }
 
-/* Section Titles */
-h2 {
-    color: #4CAF50;
-    margin-bottom: 1rem;
-    font-size: 2rem;
-    text-transform: uppercase;
-}
-
-/* Highlighted Section */
-.project-description {
-    background: linear-gradient(135deg, #4CAF50, #81C784);
-    color: white;
-    padding: 1.5rem;
+/* Main Section */
+section {
+    background-color: white;
+    padding: 2rem;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    margin-top: 1rem;
-    text-align: left;
-    font-size: 1.1rem;
-    line-height: 1.8;
-    transition: background 0.3s ease;
+    margin-bottom: 2rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.project-description:hover {
-    background: linear-gradient(135deg, #388E3C, #66BB6A);
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Links */
-a {
+h2, h3 {
     color: #4CAF50;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.2s ease;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
 }
 
-a:hover {
-    text-decoration: underline;
-    color: #388E3C;
+ul {
+    margin-left: 20px;
+    list-style-type: disc;
 }
 
-/* Responsive Design */
-@media (max-width: 600px) {
-    section {
-        padding: 1.5rem;
-    }
-
-    header {
-        padding: 1.5rem;
-    }
-
-    h2 {
-        font-size: 1.5rem;
-    }
+ul li {
+    margin-bottom: 10px;
 }
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1rem;
+    color: #777;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
