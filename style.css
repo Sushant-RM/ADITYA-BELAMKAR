@@ -1,4 +1,3 @@
-
 /* Reset default margin and padding */
 * {
     margin: 0;
@@ -9,78 +8,107 @@
 /* Global Styles */
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f5f5f5;
-    margin: 0;
-    padding: 20px;
+    background-color: #e3f2fd;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     min-height: 100vh;
+    flex-direction: column;
+    padding: 20px;
 }
 
-/* Main Container */
-section {
-    background-color: white;
-    padding: 2rem;
-    width: 90%;
-    max-width: 800px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    text-align: center;
+/* Main Section */
+main {
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
     margin-top: 30px;
-    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Add hover effect */
-}
-
-section:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* Header */
 header {
-    background-color: #4CAF50;
+    background-color: #81C784;
     color: white;
-    padding: 2rem;
-    border-radius: 8px;
-    margin-bottom: 1.5rem;
+    padding: 3rem;
+    border-radius: 15px;
     text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+header:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 }
 
 header h1 {
-    font-size: 2.5rem;
-    margin: 0;
+    font-size: 3rem;
+    margin-bottom: 1rem;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
 header p {
-    margin: 1rem 0 0;
     font-size: 1.2rem;
+    font-weight: 300;
+}
+
+/* Section Styles */
+section {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
 /* Section Titles */
 h2 {
     color: #4CAF50;
+    font-size: 2.5rem;
     margin-bottom: 1rem;
-    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
     text-transform: uppercase;
 }
 
-/* Highlighted Section */
-.project-description {
-    background: linear-gradient(135deg, #4CAF50, #81C784);
-    color: white;
-    padding: 1.5rem;
-    border-radius: 8px;
-    margin-top: 1rem;
-    text-align: left;
+/* Paragraph Styling */
+p {
+    color: #555;
+    line-height: 1.6;
     font-size: 1.1rem;
-    line-height: 1.8;
-    transition: background 0.3s ease;
 }
 
-.project-description:hover {
-    background: linear-gradient(135deg, #388E3C, #66BB6A);
+/* Lists and Items */
+ul {
+    list-style-type: none;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+}
+
+ul li {
+    margin-bottom: 1rem;
+}
+
+ul li strong {
+    color: #388E3C;
+}
+
+/* Footer Styling */
+footer {
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #4CAF50;
 }
 
 /* Links */
@@ -88,7 +116,7 @@ a {
     color: #4CAF50;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.2s ease;
+    transition: color 0.3s ease;
 }
 
 a:hover {
@@ -97,17 +125,34 @@ a:hover {
 }
 
 /* Responsive Design */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
     section {
         padding: 1.5rem;
     }
 
-    header {
-        padding: 1.5rem;
+    h2 {
+        font-size: 2rem;
     }
 
-    h2 {
-        font-size: 1.5rem;
+    p {
+        font-size: 1rem;
     }
 }
 
+@media (max-width: 480px) {
+    header {
+        padding: 2rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+    
+    footer {
+        font-size: 0.9rem;
+    }
+}
